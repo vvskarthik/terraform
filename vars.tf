@@ -15,10 +15,10 @@ variable "count" {
 default="1"
 }
 variable "access_key" {
-#  default = "AKIAIYZQWXWDQUSVNQLA"
+#  default = "AKIAIYZQWX"
 }
 variable "secret_key" {
-#  default = "7ODXVfzIBqwwcq4Pss/3oI3qoHvgY4g0kH5tp035"
+#  default = "7ODXVfzIBqwwPss/3oI3qoHvgY4g0kH5tp035"
 }
 #variable "INSTANCE_USERNAME" {
 #  default = "Terraform"
