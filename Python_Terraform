@@ -1,0 +1,16 @@
+
+
+#!/bin/python
+import python_terraform
+
+from python_terraform import *
+
+enter = int(input('Enter number of instances: '))
+
+tf = Terraform(working_dir='/root/aws-terraform', variables={'count':enter})
+
+tf.plan(no_color=IsFlagged,refresh=False,capture_output=True)
+approve = {"auto-approve": True}
+print('/n')
+tf.plan()
+tf.apply(**approve)
